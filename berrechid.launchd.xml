@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- berrechid.launchd.xml -->
+
+<launch>
+    <copy file="berrechid.net.xml" />
+    <copy file="berrechid.rou.xml" />
+    <copy file="berrechid.sumo.cfg" type="config" />
+</launch>

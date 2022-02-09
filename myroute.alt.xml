@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-01-01 10:49:42 by Eclipse SUMO duarouter Version 1.11.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="berrechid.net.xml"/>
+        <route-files value="mytrip.xml"/>
+    </input>
+
+    <output>
+        <output-file value="myroute.xml"/>
+        <alternatives-output value="myroute.alt.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="trip-1" depart="0.00" color="magenta">
+        <routeDistribution last="0">
+            <route cost="115.44" probability="1.00000000" edges="403397173#2 142015359#4 142015359#5 142015359#6 733422062 -731105261#3 -731105261#2 -731105261#0 731105260#1 731105260#2 731105260#3 731105261#0 -731105261#0 731105260#1 731105260#2 -119104982#11 -119104982#10 -119104982#9 -119104982#8 -119104982#7 -119104982#6 -119104982#4 -119104982#3 -119104982#2 -119104982#1 119104985#8 119104985#9 119104985#10 119104985#12 597088399 407392691#1 407392691#2 407392691#3 407392691#4 407392691#5 248594933#4 248594933#5 248594933#6 733423736 733423735"/>
+        </routeDistribution>
+    </vehicle>
+</routes>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="GatcomSUMO">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/GatcomSUMO.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
