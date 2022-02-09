@@ -115,9 +115,56 @@ Nous avons utilisé openstreetmap pour recadrer le réseau berrechid et pouvoir 
 ## 2.Connectez Sumo à Kafka et produisez des données :
 Afin de recevoir le flux de données du sumo, kafka est la meilleure solution alors que nous avons plusieurs suivis de voitures. Donc, pour connecter sumo à kafka, nous avons implémenté le script python suivant qui nous permet d'obtenir automatiquement le flux de données de sumo pour le produire avec kafka.
 
-Importations nécessaires.
-
 ![11](https://user-images.githubusercontent.com/81876011/153228630-a489025f-7c40-4c46-8760-13bb9ac694ba.png)
 ![12](https://user-images.githubusercontent.com/81876011/153228637-9faac544-eea0-4859-9abb-a0e1a7c874f5.png)
+
+Créer un objet producteur et produire des données.
+
+![13](https://user-images.githubusercontent.com/81876011/153229185-c3d22d6f-7e32-479a-ab38-7cdf8203ba6e.png)
+
+## 3. Charger les données dans la base de données NoSQL Neo4J :
+
+Comme nous recevons plusieurs données de voiture, la meilleure solution est de représenter nos données de flux dans un tableau graphique, donc Neo4J est la meilleure solution pour notre cas.
+
+Dans cette étape, nous allons connecter Kafka avec kafka avec la base de données Neo4J Nosql pour stocker notre flux provenant du système de messagerie kafka.
+
+Dans ce cas, nous consommerons des données, donc un objet Kafka consumer sera nécessaire.
+
+![15](https://user-images.githubusercontent.com/81876011/153232068-1a81cd6f-bad6-4cad-a7a5-6f2ad645c609.png)
+
+## 4. Appliquer l'algorithme PageRank :
+
+Le PageRank est l'algorithme le plus puissant pour classer les nœuds dans un schéma de graphe, dans notre cas les rues.
+
+Ainsi, pour classer les rues les plus importantes dans notre schéma graphique, nous appliquerons l'algorithme neo4J sur les données stockées dans notre base de données NoSQL Neo4j.
+
+Nous avons donc implémenté le script suivant.
+
+![16](https://user-images.githubusercontent.com/81876011/153232930-d3984c53-ddde-46a2-a62a-6311b8e18476.png)
+
+![17](https://user-images.githubusercontent.com/81876011/153233106-0a9a767e-f760-471f-bb6d-f804be3737df.png)
+![18](https://user-images.githubusercontent.com/81876011/153233119-4870c478-626a-49d2-b51d-7e3e47b74723.png)
+
+**Flux de données dans Neo4J**
+
+![19](https://user-images.githubusercontent.com/81876011/153233126-e98a1a4c-87b8-4ea3-81af-54a68718d972.png)
+
+## 5. Détecter les actions fraud des taxis :
+
+Jusqu'à présent, nous avons implémenté notre flux de données avec succès et l'algorithme de classement des pages fonctionne bien.
+
+Dans cette étape, nous appliquerons des filtres pour extraire les connaissances du résultat du classement de la page, donc pour chaque rue, nous avons un score d'action frauduleuse comme suit :
+
+![20](https://user-images.githubusercontent.com/81876011/153233851-c1e80d5b-a524-4372-a14b-2806122275f7.png)
+
+Score de fraude de rue
+
+Selon ce score, nous détecterons si un trajet en taxi est frau ou non, nous avons donc fixé un score de 0,6.
+
+Si le score > 0,6 alors ce voyage est sans danger.
+
+Sinon, ce voyage en taxi est une fraude.
+
+![21](https://user-images.githubusercontent.com/81876011/153234460-f71caafe-754b-4e02-95ef-cd18fc407018.png)
 
 Merci!
