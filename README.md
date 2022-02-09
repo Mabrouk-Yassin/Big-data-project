@@ -120,3 +120,4 @@ Importations nécessaires.
 ![11](https://user-images.githubusercontent.com/81876011/153228630-a489025f-7c40-4c46-8760-13bb9ac694ba.png)
 ![12](https://user-images.githubusercontent.com/81876011/153228637-9faac544-eea0-4859-9abb-a0e1a7c874f5.png)
 
+Merci!
