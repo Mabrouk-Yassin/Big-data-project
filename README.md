@@ -112,5 +112,11 @@ Nous avons utilisé openstreetmap pour recadrer le réseau berrechid et pouvoir 
 ![image](https://user-images.githubusercontent.com/81876011/153182116-c8ea66a3-c420-4b63-a2d1-ec34d16e56ae.png)
 
 
+## 2.Connectez Sumo à Kafka et produisez des données :
+Afin de recevoir le flux de données du sumo, kafka est la meilleure solution alors que nous avons plusieurs suivis de voitures. Donc, pour connecter sumo à kafka, nous avons implémenté le script python suivant qui nous permet d'obtenir automatiquement le flux de données de sumo pour le produire avec kafka.
+
+Importations nécessaires.
+![image](https://user-images.githubusercontent.com/81876011/153183667-c472480e-7716-4605-a9f7-45d9fc8364fa.png)
+![image](https://user-images.githubusercontent.com/81876011/153183837-3f329e87-6daf-44be-813b-46d451bb59cf.png)
 
 
