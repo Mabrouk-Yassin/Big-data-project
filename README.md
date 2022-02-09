@@ -97,26 +97,26 @@ Ensuite, nous créons un fichier de configuration sumo, afin d'exécuter la simu
 
 En utilisant l'interface graphique SUMO, pour générer le fichier xml, nous pouvons procéder comme suit
 
-![image](https://user-images.githubusercontent.com/81876011/153181709-009bd81d-96e1-4e29-b27f-0f0504172078.png)
-![image](https://user-images.githubusercontent.com/81876011/153181727-f42763a6-6a5a-44e1-a411-3497ceaa1ea0.png)
-![image](https://user-images.githubusercontent.com/81876011/153181743-e04a86ac-c717-4db5-9df5-98ecfedbadc9.png)
-![image](https://user-images.githubusercontent.com/81876011/153181757-c0b1173d-48fb-467b-bcf4-86de5f8109bb.png)
+![1](https://user-images.githubusercontent.com/81876011/153227645-b89c063f-05fe-4ce1-a77a-2f0651d74dbf.png)
+![2](https://user-images.githubusercontent.com/81876011/153227649-1a32c3d9-bd1e-461f-86e3-c21e58c5f1a4.png)
+![3](https://user-images.githubusercontent.com/81876011/153227652-0fa89ab3-34f3-4d2f-a0b4-33da9fa6ef74.png)
+![4](https://user-images.githubusercontent.com/81876011/153227654-96921626-4b9f-4af0-927e-d0d78617ac10.png)
+
 
 Nous avons utilisé openstreetmap pour recadrer le réseau berrechid et pouvoir extraire la carte avec laquelle nous allons faire la simulation, et puisque le simulateur SUMO prend des fichiers xml en entrée, il est nécessaire de convertir le fichier osm à l'aide de la commande netConvert en fichiers xml qui sera exécuté sur le logiciel de simulation de suivi de voiture SUMO.
 
-![image](https://user-images.githubusercontent.com/81876011/153182004-02d3149d-9c1f-47b2-a8d4-8ebc11db4135.png)
-![image](https://user-images.githubusercontent.com/81876011/153182027-5b7d9945-4a3b-431f-a2d5-e20a93ec17f2.png)
-![image](https://user-images.githubusercontent.com/81876011/153182048-c3277ed5-d3e0-449f-a514-00992ad59ddf.png)
-![image](https://user-images.githubusercontent.com/81876011/153182075-12341e37-d618-4353-8118-274624085fb3.png)
-![image](https://user-images.githubusercontent.com/81876011/153182095-5bcd00bf-c7a1-43ed-861d-24babd266fba.png)
-![image](https://user-images.githubusercontent.com/81876011/153182116-c8ea66a3-c420-4b63-a2d1-ec34d16e56ae.png)
-
+![5](https://user-images.githubusercontent.com/81876011/153227875-f0a482ce-3e17-48fb-a423-a174fc8cc394.png)
+![6](https://user-images.githubusercontent.com/81876011/153227856-00c2a639-a3f0-43c0-ae55-a9e0ec5dc0d0.png)
+![7](https://user-images.githubusercontent.com/81876011/153227864-17e976e9-2c92-4b95-9741-21d58aba32a5.png)
+![8](https://user-images.githubusercontent.com/81876011/153227868-08e326d6-528e-4c95-bdb4-bf9c2f3cbb15.png)
+![9](https://user-images.githubusercontent.com/81876011/153227869-34f29189-4a8a-4de1-937e-910c3e6971d6.png)
+![10](https://user-images.githubusercontent.com/81876011/153227871-8a5c6fc9-19d9-4980-8000-8a0ad68b9494.png)
 
 ## 2.Connectez Sumo à Kafka et produisez des données :
 Afin de recevoir le flux de données du sumo, kafka est la meilleure solution alors que nous avons plusieurs suivis de voitures. Donc, pour connecter sumo à kafka, nous avons implémenté le script python suivant qui nous permet d'obtenir automatiquement le flux de données de sumo pour le produire avec kafka.
 
 Importations nécessaires.
-![image](https://user-images.githubusercontent.com/81876011/153183667-c472480e-7716-4605-a9f7-45d9fc8364fa.png)
-![image](https://user-images.githubusercontent.com/81876011/153183837-3f329e87-6daf-44be-813b-46d451bb59cf.png)
 
+![11](https://user-images.githubusercontent.com/81876011/153228630-a489025f-7c40-4c46-8760-13bb9ac694ba.png)
+![12](https://user-images.githubusercontent.com/81876011/153228637-9faac544-eea0-4859-9abb-a0e1a7c874f5.png)
 
